@@ -1,26 +1,20 @@
 {
-  "name": "todo-list-app",
-  "version": "1.0.0",
-  "description": "��#\u0000 \u0000t\u0000o\u0000d\u0000o\u0000-\u0000l\u0000i\u0000s\u0000t\u0000-\u0000a\u0000p\u0000p\u0000\r\u0000 \u0000",
-  "main": "index.js",
   "scripts": {
-    "start": "tsc --watch"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sio-doh/todo-list-app.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sio-doh/todo-list-app/issues"
-  },
-  "homepage": "https://github.com/sio-doh/todo-list-app#readme",
-  "devDependencies": {
-    "typescript": "^4.8.2"
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "test": "echo \"This template does not include a test runner by default.\" && exit 1",
+    "format": "prettier --write \"src/**/*.{ts,js}\"",
+    "lint": "prettier --check \"src/**/*.{ts,js}\""
   },
   "dependencies": {
-    "uuid": "^9.0.0"
+    "canvas-confetti": "^1.2.0"
+  },
+  "devDependencies": {
+    "@snowpack/plugin-typescript": "^1.2.1",
+    "@types/canvas-confetti": "^1.0.0",
+    "@types/snowpack-env": "^2.3.3",
+    "prettier": "^2.2.1",
+    "snowpack": "^3.3.7",
+    "typescript": "^4.2.4"
   }
 }
